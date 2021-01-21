@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_green_dark"
+    android:background="@android:color/holo_purple"
     tools:context=".MainActivity">
     <TextView
         android:id="@+id/titleText"
@@ -12,12 +12,13 @@
         android:layout_height="wrap_content"
         android:text="Zane Rickert Scripting"
         android:textSize="28sp"
+        android:padding="5dp"
         android:textColor="@android:color/white"
         />
     <ImageView
         android:id="@+id/codeSnippet"
         android:layout_width="wrap_content"
-        android:layout_height="400sp"
+        android:layout_height="400dp"
         android:scaleType="centerCrop"
         android:src="@drawable/code"
         android:layout_below="@id/titleText"/>
@@ -30,6 +31,18 @@ for services that use graphical interfaces, or 2D graphics."
         android:textSize="28sp"
         android:layout_below="@id/codeSnippet"
         android:textColor="@android:color/white"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@id/descriptionText"
+        android:layout_height="5dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionText"
+        android:text="269-999-2866 \n02zane.rickert@gulllakec.org\nRichland, MI"
         />
 
 </RelativeLayout>
